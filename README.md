@@ -17,12 +17,12 @@ An ERD was created to visualize each table's connections and the appropriate con
 
 Sample Python code used for Deliverable #2 - Transforming and cleaning the data:
 ```
-    # Iterate through the backers DataFrame and convert each row to a dictionary.
-    values = []
-    column_names = []
-    # Iterate through the backers DataFrame and convert each row to a dictionary.
-    for i, row in backers_info.iterrows():
-        data = row[0]
+# Iterate through the backers DataFrame and convert each row to a dictionary.
+values = []
+column_names = []
+# Iterate through the backers DataFrame and convert each row to a dictionary.
+for i, row in backers_info.iterrows():
+	data = row[0]
         # Iterate through each dictionary (row) and get the values for each row using list comprehension.
         converted_data = json.loads(data)
         columns = [k for k,v in converted_data.items()]
